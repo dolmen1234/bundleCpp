@@ -27,6 +27,12 @@ public class Bundler {
     private List<String> implem = new ArrayList<>();
     private static int bundleCount = 0;
 
+    /**
+     * optionel : on peut aussi compiler
+     * @param cppFile
+     * @throws IOException
+     * @throws InterruptedException
+     */
     void compile(File cppFile) throws IOException, InterruptedException {
         String oFile = cppFile.getAbsolutePath().replaceAll("cpp", "o");
         String compileLine = "g++ -std=c++0x -O3 -march=native -mtune=native -fopt-info-vec-all=vectorisation.log -g3 -Wall -c -fmessage-length=0 -Wpadded "
