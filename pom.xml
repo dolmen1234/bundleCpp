@@ -8,7 +8,7 @@
 
 	<properties>
 		<target.jdk>1.8</target.jdk>
-		<junit.version>4.8</junit.version>
+		<junit.version>4.13.1</junit.version>
 	</properties>
 
 
